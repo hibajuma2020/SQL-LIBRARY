@@ -89,3 +89,10 @@ CREATE TABLE Review (
     ON DELETE CASCADE
     ON UPDATE CASCADE
 );
+INSERT INTO Library (Name, Location, ContactNumber, EstablishedYear)
+VALUES
+('Central Library', 'New York', '1234567890', 1995),
+('Westside Library', 'California', '9876543210', 2015),
+('City Library', 'Texas', '5554443333', 2008);
+
+SELECT * FROM Library;

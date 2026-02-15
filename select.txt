@@ -1,0 +1,93 @@
+First: Definition of SELECT
+
+The SELECT command in SQL is the command we use to retrieve data from a database.
+
+For example, if we want to display data from a specific table (such as student names or book prices), we use SELECT.
+
+In simpler terms:
+
+SELECT = Data Display Command
+
+🔹 Why Use SELECT?
+
+We use SELECT to:
+
+Display all data from a table
+
+Display only specific columns
+
+Search for data based on specific criteria
+
+Sort data
+
+Prevent duplication
+
+Analyze data
+
+In short, almost any data reading operation in SQL relies on SELECT.
+
+🔹 3 Examples of SELECT with Explanations
+
+✅ Example 1: Displaying All Data
+SELECT * FROM Students;
+
+📌 Explanation:
+
+This command displays all columns and all rows from the Students table.
+
+The asterisk (*) means "all columns".
+
+✅ Example 2: Displaying Specific Columns
+SELECT Name, Age FROM Students;
+
+📌 Explanation:
+Here, we are displaying only the Name and Age columns from the Students table.
+
+We are not displaying the other columns.
+
+✅ Example 3: Displaying data from another table
+SELECT Title, Price FROM Book;
+
+📌 Explanation:
+This displays only the book title and price from the Book table.
+
+🔹 Example of WHERE, ORDER BY, and DISTINCT
+✅ Example of WHERE (Specifying a condition)
+SELECT * FROM Students
+WHERE Age > 20;
+
+📌 Explanation:
+This displays only students whose ages are greater than 20.
+
+✅ Example of ORDER BY (Sorting data)
+SELECT Name, Age FROM Students
+ORDER BY Age DESC;
+
+📌 Explanation:
+This sorts students by age in descending order (from oldest to youngest).
+
+DESC = Descending
+ASC = Ascending
+
+✅ Example: DISTINCT (Remove Duplicates)
+SELECT DISTINCT City FROM Students;
+
+📌 Explanation:
+
+Displays city names without duplicates.
+
+If there are 10 students from the same city, it displays the city name only once.
+
+🔹 Why is SELECT important in SQL?
+
+SELECT is considered the most important command in SQL because:
+
+It is fundamental to reading data.
+
+It is used in reports.
+
+It is used in analysis.
+
+It is involved in advanced operations such as JOIN and GROUP BY.
+
+Without SELECT, we cannot view the data within the database.
