@@ -143,3 +143,17 @@ VALUES
 (3, 'Good but long', '2024-03-05', 3, 2);
 
 
+SELECT Name, Location FROM Library;
+SELECT * FROM Library;
+SELECT * FROM Book
+WHERE Genre = 'Fiction';
+SELECT DISTINCT Genre FROM Book;
+SELECT TOP 5 *
+FROM Book
+ORDER BY Price DESC;
+SELECT *
+FROM Book
+WHERE Title LIKE 'The%';
+SELECT *
+FROM Loan
+WHERE ReturnDate IS NULL;
